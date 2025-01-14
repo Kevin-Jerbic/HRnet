@@ -1,0 +1,53 @@
+/* Universal selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  background-color: rgb(241, 237, 237);
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Root element */
+#root {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Main */
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-width: 1400px;
+  width: 95%;
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border: solid 1px lightgray;
+  border-radius: 15px;
+}
+
+/* Lists */
+ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a.active {
+  color: #5A6F08;
+  text-decoration: underline;
+}
