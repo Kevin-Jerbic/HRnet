@@ -1,0 +1,409 @@
+/* *********** */
+/* Components */
+/* ********* */
+
+.h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: #5A6F07;
+    margin: 30px 0;
+}
+/* --------------------------------------------------------------------------------------------------- */
+
+/* ButttonSave */
+.button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    transition: 0.5s;
+    margin: 20px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.buttonDisabled {
+    background-color: grey;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    transition: 0.5s;
+    margin: 20px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+/* FormCreateEmployee */
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: solid 1px lightgrey;
+    border-radius: 5px;
+}
+
+.fieldset {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px lightgrey;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.legend {
+    color: #5A6F08;
+    padding: 5px;
+}
+
+.inputsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.formColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 48%;
+}
+
+/* InputDatePicker */
+.label {
+    text-align: left;
+    margin: 10px 10px 5px 5px;
+}
+
+.datePicker {
+    display: flex;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    border: solid 1px rgb(209, 206, 206);
+    border-radius: 5px;
+}
+
+.datePicker:focus {
+    outline: none;
+}
+
+.datePicker:hover {
+    border-color: #93AD18;
+}
+
+/* InputSelect */
+.selectMenu {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px lightgray;
+    border-radius: 5px;
+    color: #424040;
+    font-size: 16px;
+    position: relative;
+    min-width: 100px;
+}
+
+.selectMenu:hover .select {
+    border: solid 1px #93AD18;
+    border-radius: 5px;
+    padding: 9px;
+}
+
+.label {
+    text-align: left;
+    margin: 10px 10px 5px 5px;
+}
+
+.select {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.select i {
+    color: lightgray;
+    margin-right: 10px;
+}
+
+.ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: left;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding-top: 39px;
+    max-height: 250px;
+    overflow: auto;
+}
+
+.li {
+    padding: 10px;
+    transition: all 0.2s;
+    font-size: 16px;
+    background-color: white;
+}
+
+
+
+.li:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.li:hover {
+    color: white;
+    background-color: #5A7007;
+    cursor: pointer;
+}
+
+/* InputStandard */
+.label {
+    text-align: left;
+    margin: 10px 10px 5px 5px;
+}
+
+.input {
+    padding: 10px;
+    border: solid 1px lightgray;
+    border-radius: 5px;
+    color: #424040;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+
+.input:hover {
+    outline: none;
+    border: solid 1px #93AD18;
+}
+
+.input:focus {
+    outline: none;
+    border: solid 1px #93AD18;
+}
+
+/* TableEmployee */
+.main-div {
+    padding: 20px;
+}
+
+.search {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 20px;
+}
+
+.search label {
+    color: #93AD18;
+}
+
+.th {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px;
+    background-color: #5A6F08;
+    color: white;
+    text-align: left;
+
+}
+
+.td {
+    font-size: 14px;
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 5px;
+}
+
+
+.tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tr:hover {
+    background-color: #ddd;
+}
+
+
+.thContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.thIcons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.thIcons i {
+    font-size: 12px;
+    transition: 0.5s;
+}
+
+.thIcons i:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+
+.thTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tableBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.pagination i {
+    padding: 0 5px;
+    color: #5A6F07;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.pagination i:hover {
+    color: #93AD18;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tableContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: solid 1px lightgrey;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.tableLength {
+    display: flex;
+}
+
+.nodata {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: grey;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/* --------------------------------------------------------------------------------------------------- */
+
+
+/* ******** */
+/* Layouts */
+/* ****** */
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    width: 95%;
+    margin: 20px;
+    border: solid 1px lightgray;
+    border-radius: 15px;
+    background-color: white;
+    padding: 20px;
+}
+
+.identity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    height: 110px;
+    object-fit: cover;
+}
+
+.appName {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 40px;
+    color: #5A6F08;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+}
+
+.nav {
+    display: flex;
+}
+
+.link {
+    padding-left: 10px;
+    font-size: 18px;
+    transition: 0.5s all;
+}
+
+.navLink {
+    display: flex;
+    color: rgb(75,75,75);
+    transition: 0.5s;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: rgb(71, 68, 68);
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    margin-top: 30px;
+}
+/* --------------------------------------------------------------------------------------------------- */
+
+
+/* ************ */
+/* Pages Error */
+/* ********** */
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(248, 73, 73);
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: grey;
+}
