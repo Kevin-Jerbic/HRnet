@@ -36,7 +36,7 @@ const ReactRouter = createBrowserRouter([
         children: [
             // Pour le build, il faut changer le path de l'index.html
             {
-                path: '/app/dist/index.html',
+                path: '/HRnet/dist/index.html',
                 element: <CreateEmployee />,
             },
             {
